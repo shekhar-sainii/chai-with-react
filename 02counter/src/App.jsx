@@ -8,9 +8,11 @@ function App() {
   let [count, setCount] = useState(5)
 
   const addValue = () => {
-    console.log('Add value is ', count);
-    count = count + 1
-    setCount(count)
+  
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
   }
 
   const removeValue = () => {
